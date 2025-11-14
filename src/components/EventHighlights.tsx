@@ -11,19 +11,19 @@ const highlights = [
     icon: Users,
     title: "Group Stage Matches",
     description: "Exciting round-robin games where every team gets to showcase their skills",
-    gradient: "from-accent to-info",
+    gradient: "from-accent to-info-blue",
   },
   {
     icon: Trophy,
     title: "Finals",
     description: "Championship matches with professional setup and cheering crowds",
-    gradient: "from-secondary to-warning",
+    gradient: "from-secondary to-accent",
   },
   {
     icon: Zap,
     title: "Skill Challenges",
     description: "Fun competitions testing dribbling, shooting, and passing abilities",
-    gradient: "from-warning to-secondary",
+    gradient: "from-accent to-secondary",
   },
   {
     icon: Star,
@@ -41,7 +41,7 @@ const highlights = [
     icon: Camera,
     title: "Photo & Media Zone",
     description: "Professional photography studio and action shots throughout the tournament",
-    gradient: "from-success to-accent",
+    gradient: "from-info-blue to-primary",
   },
   {
     icon: Award,
