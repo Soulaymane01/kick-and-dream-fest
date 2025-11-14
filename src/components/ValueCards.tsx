@@ -12,13 +12,13 @@ const values = [
     icon: Globe,
     title: "Cultural Exchange & Fun",
     description: "Experience diverse cultures, make new friends from different backgrounds, and celebrate African heritage",
-    color: "from-secondary to-warning",
+    color: "from-secondary to-accent",
   },
   {
     icon: Camera,
     title: "Full Media Coverage",
     description: "Professional photos and videos of every match, creating lasting memories for players and families",
-    color: "from-accent to-info",
+    color: "from-accent to-info-blue",
   },
   {
     icon: Shield,

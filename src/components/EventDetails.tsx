@@ -29,9 +29,9 @@ const EventDetails = () => {
               {
                 icon: Calendar,
                 title: "Date",
-                info: "Coming Soon",
-                details: "Next edition announcement",
-                gradient: "from-accent to-info",
+                info: "2025 Edition",
+                details: "Dates to be announced",
+                gradient: "from-accent to-info-blue",
               },
               {
                 icon: Clock,

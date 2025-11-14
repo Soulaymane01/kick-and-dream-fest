@@ -1,4 +1,5 @@
 import { Mail, Phone, Facebook, Instagram, Twitter, Youtube } from "lucide-react";
+import logoAfc from "@/assets/logo-afc.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -11,6 +12,11 @@ const Footer = () => {
           <div className="grid md:grid-cols-3 gap-12 mb-12">
             {/* About */}
             <div>
+              <img 
+                src={logoAfc} 
+                alt="African Cup Kids Logo" 
+                className="w-24 h-24 mb-4"
+              />
               <h3 className="text-2xl font-bold mb-4">African Cup Kids</h3>
               <p className="text-white/80 mb-4">
                 Where young champions rise. The ultimate youth football experience inspired by the African Cup of Nations.

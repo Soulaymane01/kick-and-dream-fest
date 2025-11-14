@@ -50,11 +50,13 @@ export default {
         success: "hsl(var(--success))",
         warning: "hsl(var(--warning))",
         info: "hsl(var(--info))",
+        "info-blue": "hsl(var(--info-blue))",
       },
       backgroundImage: {
         'gradient-hero': 'var(--gradient-hero)',
         'gradient-warm': 'var(--gradient-warm)',
         'gradient-card': 'var(--gradient-card)',
+        'gradient-brand': 'var(--gradient-brand)',
       },
       boxShadow: {
         'card': 'var(--shadow-card)',

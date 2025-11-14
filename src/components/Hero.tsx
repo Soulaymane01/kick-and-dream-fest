@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Trophy, Users } from "lucide-react";
 import heroImage from "@/assets/hero-football.jpg";
+import logoAfc from "@/assets/logo-afc.png";
 
 const Hero = () => {
   return (
@@ -12,7 +13,7 @@ const Hero = () => {
           alt="Kids playing football" 
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/90 via-accent/80 to-secondary/90" />
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/85 via-accent/75 to-secondary/85" />
       </div>
 
       {/* Floating Football Elements */}
@@ -25,7 +26,11 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto animate-fade-in">
-          <Trophy className="w-16 h-16 md:w-20 md:h-20 mx-auto mb-6 text-warning animate-bounce-in" />
+          <img 
+            src={logoAfc} 
+            alt="African Cup Kids Logo" 
+            className="w-32 h-32 md:w-40 md:h-40 mx-auto mb-8 animate-bounce-in drop-shadow-2xl"
+          />
           
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
             African Cup Kids
