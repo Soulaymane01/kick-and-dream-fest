@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Soulaymane01.github.io/kick-and-dream-fest/",
+  "homepage": "https://soulaymane01.github.io/kick-and-dream-fest/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
