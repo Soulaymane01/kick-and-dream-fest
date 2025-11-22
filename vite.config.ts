@@ -14,7 +14,7 @@ export default defineConfig(({ mode }) => ({
   ].filter(Boolean),
 
   // 👇 Add the base option HERE
-  base: "/soulaymane01/",
+  base: "/kick-and-dream-fest/",
 
   resolve: {
     alias: {
