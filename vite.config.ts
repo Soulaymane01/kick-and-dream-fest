@@ -3,6 +3,8 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
 
+const repoName = "/";
+
 export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
@@ -14,7 +16,7 @@ export default defineConfig(({ mode }) => ({
   ].filter(Boolean),
 
   // 👇 Add the base option HERE
-  base: "/kick-and-dream-fest/",
+    base: "/",
 
   resolve: {
     alias: {

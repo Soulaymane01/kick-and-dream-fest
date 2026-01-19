@@ -25,7 +25,7 @@ const teams = [
 
 const Volunteer = () => {
   return (
-    <section className="py-20 bg-gradient-to-b from-muted/30 to-background">
+    <section id="volunteers" className="py-20 bg-gradient-to-b from-muted/30 to-background">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Header */}

@@ -1,72 +1,110 @@
-import { Heart, Users, TrendingUp, Award } from "lucide-react";
-import kidsCollage from "@/assets/kids-collage.jpg";
-
-const values = [
-  { icon: Users, title: "Teamwork", description: "Building bonds that last beyond the field" },
-  { icon: Heart, title: "Unity", description: "Celebrating diversity through sport" },
-  { icon: TrendingUp, title: "Growth", description: "Developing skills and character" },
-  { icon: Award, title: "Sportsmanship", description: "Respect, fair play, and excellence" },
-];
+import { Target, Eye, HeartHandshake, Quote, Award } from "lucide-react";
 
 const About = () => {
+
+  const awards = [
+    { icon: "🏅", label: "Best Player" },
+    { icon: "🧤", label: "Best Goalkeeper" },
+    { icon: "🎯", label: "Top Scorer" },
+    { icon: "🤝", label: "Fair Play Award" },
+    { icon: "🎓", label: "Best Coach" },
+    { icon: "🎖", label: "Medals & Certificates for All Players" }
+  ];
+
   return (
-    <section className="py-20 bg-gradient-to-b from-background to-muted/30">
-      <div className="container mx-auto px-4">
-        <div className="max-w-6xl mx-auto">
-          {/* Header */}
-          <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-              About African Cup Kids
-            </h2>
-            <div className="w-24 h-1 bg-gradient-hero mx-auto mb-6 rounded-full" />
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              More than just a tournament – it's a celebration of culture, talent, and the beautiful game
+    <section
+      id="about"
+      className="py-20 bg-gradient-to-b from-background to-muted/40"
+    >
+      <div className="container mx-auto px-4 max-w-6xl">
+
+        {/* HEADER */}
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+            About The Event
+          </h2>
+          <div className="w-24 h-1 mx-auto bg-gradient-hero rounded-full mb-6" />
+          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
+            A youth tournament built on excellence, values, and the passion of African football.
+          </p>
+        </div>
+
+        {/* GRID SECTION */}
+        <div className="grid md:grid-cols-3 gap-8 mb-20">
+          
+          {/* MISSION */}
+          <div className="bg-gradient-card p-8 rounded-3xl shadow-card">
+            <div className="bg-gradient-hero p-3 w-fit rounded-2xl mb-4">
+              <Target className="text-white w-6 h-6" />
+            </div>
+            <h3 className="text-2xl font-semibold mb-3 text-foreground">Mission</h3>
+            <p className="text-muted-foreground leading-relaxed">
+              To empower children through football, education & African unity.
             </p>
           </div>
 
-          {/* Content Grid */}
-          <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
-            {/* Image */}
-            <div className="animate-slide-up">
-              <img 
-                src={kidsCollage} 
-                alt="Kids playing football together" 
-                className="rounded-3xl shadow-hover w-full h-auto"
-              />
+          {/* VISION */}
+          <div className="bg-gradient-card p-8 rounded-3xl shadow-card">
+            <div className="bg-gradient-hero p-3 w-fit rounded-2xl mb-4">
+              <Eye className="text-white w-6 h-6" />
             </div>
-
-            {/* Description */}
-            <div className="animate-slide-up" style={{ animationDelay: '0.2s' }}>
-              <p className="text-lg text-foreground/80 mb-6 leading-relaxed">
-                African Cup Kids brings the magic of the African Cup of Nations to young footballers across the continent and beyond. We create an environment where children can showcase their talents, learn from each other, and celebrate the rich diversity of African football culture.
-              </p>
-              <p className="text-lg text-foreground/80 mb-6 leading-relaxed">
-                Our tournament is designed to inspire the next generation of football stars while emphasizing values that extend far beyond the pitch. Every child who participates becomes part of a larger story of growth, unity, and excellence.
-              </p>
-            </div>
+            <h3 className="text-2xl font-semibold mb-3 text-foreground">Vision</h3>
+            <p className="text-muted-foreground leading-relaxed">
+              To make Tangier the capital of youth football development.
+            </p>
           </div>
 
-          {/* Values Grid */}
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {values.map((value, index) => (
-              <div 
-                key={value.title}
-                className="bg-gradient-card p-6 rounded-2xl shadow-card hover:shadow-hover transition-all duration-300 transform hover:-translate-y-2 animate-bounce-in"
-                style={{ animationDelay: `${index * 0.1}s` }}
+          {/* VALUES */}
+          <div className="bg-gradient-card p-8 rounded-3xl shadow-card">
+            <div className="bg-gradient-hero p-3 w-fit rounded-2xl mb-4">
+              <HeartHandshake className="text-white w-6 h-6" />
+            </div>
+            <h3 className="text-2xl font-semibold mb-3 text-foreground">Values</h3>
+            <ul className="space-y-2 text-muted-foreground">
+              <li>Fair Play & Respect</li>
+              <li>Discipline & Leadership</li>
+              <li>Cultural Unity & Education</li>
+              <li>Kids First 💛</li>
+            </ul>
+          </div>
+        </div>
+
+        {/* QUOTE */}
+        <div className="max-w-3xl mx-auto mb-20 bg-background/70 backdrop-blur-sm p-8 rounded-3xl border border-border shadow-lg">
+          <div className="flex items-start gap-4">
+            <Quote className="w-10 h-10 text-primary" />
+            <p className="text-xl italic text-foreground/90 leading-relaxed">
+              “This tournament is the first step toward future African stars.”
+            </p>
+          </div>
+        </div>
+
+        {/* AWARDS SECTION */}
+        <div className="text-center">
+          <div className="bg-gradient-hero w-fit mx-auto p-3 rounded-2xl mb-4">
+            <Award className="text-white w-7 h-7" />
+          </div>
+
+          <h3 className="text-3xl font-bold text-foreground mb-6">Awards</h3>
+
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
+            {awards.map((award, i) => (
+              <div
+                key={i}
+                className="group flex items-center gap-3 bg-gradient-to-r from-primary/10 to-transparent backdrop-blur-sm px-5 py-4 rounded-xl border border-primary/20 shadow-sm hover:shadow-lg hover:border-primary/40 hover:bg-primary/15 transition-all duration-300"
               >
-                <div className="bg-gradient-hero p-3 rounded-xl w-fit mb-4">
-                  <value.icon className="w-6 h-6 text-white" />
-                </div>
-                <h3 className="text-xl font-bold text-foreground mb-2">
-                  {value.title}
-                </h3>
-                <p className="text-muted-foreground">
-                  {value.description}
-                </p>
+                <span className="text-3xl group-hover:scale-125 transition-transform duration-300">
+                  {award.icon}
+                </span>
+                <span className="font-semibold text-gray-800 group-hover:text-primary transition-colors">
+                  {award.label}
+                </span>
               </div>
             ))}
           </div>
+
         </div>
+
       </div>
     </section>
   );

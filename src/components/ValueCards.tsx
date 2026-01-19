@@ -42,7 +42,7 @@ const values = [
 
 const ValueCards = () => {
   return (
-    <section className="py-20 bg-muted/20">
+    <section id="competition" className="py-20 bg-muted/20">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
@@ -68,7 +68,9 @@ const ValueCards = () => {
                   {/* Icon with gradient background */}
                   <div className={`bg-gradient-to-br ${value.color} p-4 rounded-2xl w-fit mb-4 group-hover:scale-110 transition-transform duration-300`}>
                     <value.icon className="w-8 h-8 text-white" />
-                  </div>
+                </div>
+
+
                   
                   {/* Title */}
                   <h3 className="text-xl font-bold text-foreground mb-3">

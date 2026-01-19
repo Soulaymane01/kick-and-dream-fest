@@ -1,77 +1,87 @@
-import { Button } from "@/components/ui/button";
-import { Trophy, Users } from "lucide-react";
 import heroImage from "@/assets/hero-football.jpg";
 import logoAfc from "@/assets/logo-afc.png";
 
 const Hero = () => {
-  return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image with Overlay */}
-      <div className="absolute inset-0 z-0">
-        <img 
-          src={heroImage} 
-          alt="Kids playing football" 
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/85 via-accent/75 to-secondary/85" />
-      </div>
+  const highlights = [
+    { line1: "32 Teams", line2: "(U12 & U14)" },
+    { line1: "1 Month of", line2: "Competition" },
+    { line1: "Full Professional", line2: "Experience" },
+    { line1: "Morocco + Africa", line2: "Spirit 🇲🇦🌍" }
+  ];
 
-      {/* Floating Football Elements */}
-      <div className="absolute inset-0 z-0 overflow-hidden">
-        <div className="absolute top-20 left-10 w-16 h-16 rounded-full bg-secondary/20 animate-float" />
-        <div className="absolute bottom-40 right-20 w-24 h-24 rounded-full bg-accent/20 animate-float" style={{ animationDelay: '1s' }} />
-        <div className="absolute top-1/3 right-1/4 w-12 h-12 rounded-full bg-warning/20 animate-float" style={{ animationDelay: '2s' }} />
+  return (
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black"
+    >
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src={heroImage}
+          alt="Kids playing football"
+          className="w-full h-full object-cover scale-105 animate-slow-zoom"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-primary/40 to-black/90" />
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 text-center">
-        <div className="max-w-4xl mx-auto animate-fade-in">
-          <img 
-            src={logoAfc} 
-            alt="African Cup Kids Logo" 
-            className="w-32 h-32 md:w-40 md:h-40 mx-auto mb-8 animate-bounce-in drop-shadow-2xl"
+      <div className="relative z-10 container mx-auto px-6 text-center animate-fade-in">
+        {/* Logo */}
+        <div className="pt-24 pb-8">
+          <img
+            src={logoAfc}
+            alt="African Cup Kids Logo"
+            className="w-40 h-40 md:w-48 md:h-48 mx-auto drop-shadow-[0_0_25px_rgba(255,255,255,0.5)] animate-soft-bounce object-contain"
           />
-          
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-            African Cup Kids
-          </h1>
-          
-          <p className="text-2xl md:text-3xl lg:text-4xl text-white/95 font-semibold mb-4">
-            Where Young Champions Rise
-          </p>
-          
-          <p className="text-lg md:text-xl text-white/90 mb-12 max-w-2xl mx-auto">
-            The ultimate youth football experience inspired by the African Cup of Nations
-          </p>
+        </div>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button 
-              size="lg" 
-              className="bg-white text-primary hover:bg-white/90 font-bold text-lg px-8 py-6 rounded-full shadow-glow transform hover:scale-105 transition-transform"
+        {/* Headline */}
+        <h1 className="relative text-5xl md:text-7xl font-extrabold text-white mb-4 tracking-tight drop-shadow-xl">
+          African Cup Kids — Tangier 2025
+        </h1>
+
+        {/* Subheadline */}
+        <p className="text-2xl md:text-4xl text-white/90 font-semibold mb-6 drop-shadow">
+          Where young players dream like African champions
+        </p>
+
+        {/* Slogan */}
+        <p className="text-lg md:text-2xl text-white/85 mb-14 italic max-w-2xl mx-auto">
+          "Africa United. Kids Inspired."
+        </p>
+
+        {/* Highlights */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto mb-20">
+          {highlights.map((item, i) => (
+            <div
+              key={i}
+              className="text-white font-semibold bg-white/10 backdrop-blur-sm py-6 px-4 rounded-2xl border border-white/20 shadow-md hover:shadow-xl hover:bg-white/15 transition-all cursor-default"
             >
-              <Trophy className="mr-2 h-5 w-5" />
-              Register Your Team
-            </Button>
-            
-            <Button 
-              size="lg" 
-              variant="outline" 
-              className="border-2 border-white text-white bg-white/10 hover:bg-white hover:text-primary font-bold text-lg px-8 py-6 rounded-full backdrop-blur-sm transform hover:scale-105 transition-transform"
-            >
-              <Users className="mr-2 h-5 w-5" />
-              Become a Volunteer
-            </Button>
-          </div>
+              <div className="text-xl md:text-2xl leading-tight">{item.line1}</div>
+              <div className="text-lg md:text-xl leading-tight mt-1">{item.line2}</div>
+            </div>
+          ))}
+        </div>
+
+
+
+        {/* Countdown */}
+        <div className="mb-24">
+          <h3 className="text-2xl md:text-4xl text-white font-bold mb-2 drop-shadow">
+            Countdown to Grand Final
+          </h3>
+          <p className="text-xl md:text-3xl text-white/90 font-semibold">
+            24 Jan 2026
+          </p>
         </div>
       </div>
 
-      {/* Bottom Wave */}
-      <div className="absolute bottom-0 left-0 right-0 z-10">
+      {/* Decorative Wave */}
+      <div className="absolute bottom-0 left-0 right-0 z-10 ">
         <svg viewBox="0 0 1440 120" className="w-full h-auto">
-          <path 
-            fill="hsl(var(--background))" 
-            d="M0,64L48,69.3C96,75,192,85,288,80C384,75,480,53,576,48C672,43,768,53,864,58.7C960,64,1056,64,1152,58.7C1248,53,1344,43,1392,37.3L1440,32L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z"
+          <path
+            fill="white"
+            d="M0,64L48,69.3C96,75,192,85,288,80C384,75,480,53,576,48C672,43,768,53,864,58.7C960,64,1056,64,1152,58.7C1248,53,1344,43,1392,37.3L1440,32V120H0Z"
           />
         </svg>
       </div>

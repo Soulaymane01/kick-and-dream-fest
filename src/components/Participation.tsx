@@ -30,7 +30,7 @@ const eligibility = [
 
 const Participation = () => {
   return (
-    <section className="py-20 bg-gradient-to-b from-background to-primary/5">
+    <section id="schools" className="py-20 bg-gradient-to-b from-background to-primary/5">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Header */}

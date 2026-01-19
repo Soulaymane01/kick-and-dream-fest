@@ -1,4 +1,4 @@
-import { Mail, Phone, Facebook, Instagram, Twitter, Youtube } from "lucide-react";
+import { Mail, Phone, Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
 import logoAfc from "@/assets/logo-afc.png";
 
 const Footer = () => {
@@ -15,7 +15,7 @@ const Footer = () => {
               <img 
                 src={logoAfc} 
                 alt="African Cup Kids Logo" 
-                className="w-24 h-24 mb-4"
+                className="w-24 h-54 mb-4"
               />
               <h3 className="text-2xl font-bold mb-4">African Cup Kids</h3>
               <p className="text-white/80 mb-4">
@@ -27,13 +27,9 @@ const Footer = () => {
             <div>
               <h3 className="text-xl font-bold mb-4">Contact Us</h3>
               <div className="space-y-3">
-                <a href="mailto:info@africancupkids.com" className="flex items-center text-white/80 hover:text-white transition-colors">
+                <a href="mailto:contact@africancupkids.com" className="flex items-center text-white/80 hover:text-white transition-colors">
                   <Mail className="w-5 h-5 mr-2" />
-                  info@africancupkids.com
-                </a>
-                <a href="tel:+212000000000" className="flex items-center text-white/80 hover:text-white transition-colors">
-                  <Phone className="w-5 h-5 mr-2" />
-                  +212 (0) 00 00 00 00
+                  contact@africancupkids.com
                 </a>
               </div>
             </div>
@@ -43,10 +39,9 @@ const Footer = () => {
               <h3 className="text-xl font-bold mb-4">Follow Us</h3>
               <div className="flex gap-4">
                 {[
-                  { icon: Facebook, href: "#" },
-                  { icon: Instagram, href: "#" },
-                  { icon: Twitter, href: "#" },
-                  { icon: Youtube, href: "#" },
+                  { icon: Facebook, href: "https://web.facebook.com/africancupkids/" },
+                  { icon: Instagram, href: "https://www.instagram.com/africancupkids/" },
+                  { icon: Linkedin, href: "https://www.linkedin.com/company/african-cup-kids" },
                 ].map((social, index) => (
                   <a
                     key={index}
