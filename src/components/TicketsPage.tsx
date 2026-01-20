@@ -73,18 +73,6 @@ export default function TicketsPage({ onBack }: TicketsPageProps) {
           </p>
         </div>
 
-        <div className="max-w-2xl mx-auto bg-white/70 backdrop-blur-md border border-gray-200 p-6 rounded-2xl shadow-lg">
-  <h2 className="text-xl font-bold text-gray-900 mb-3 flex items-center gap-2">
-    📢 Important Update
-  </h2>
-  <p className="text-gray-700 leading-relaxed">
-    The grand finale has been postponed to <span className="font-semibold">January 24th</span>. 
-    Make sure to follow our Instagram for the latest news.
-  </p>
-</div>
-
-
-
         {loading ? (
           <div className="text-center py-12">
             <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600" />

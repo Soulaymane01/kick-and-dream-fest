@@ -6,25 +6,25 @@
     "description": "Second tier tickets for the finales match",
     "price": 30,
     "available": true,
-    "ticket_url": "/tickets/2nd class final.jpg",
+    "ticket_url": "/tickets/2nd class final.jpeg",
     "max_quantity": 48
     },
     {
     "id": 2,
-    "tier": "VIP",
-    "description": "VIP tickets for the finales match",
+    "tier": "first class",
+    "description": "First tier tickets for the finales match",
     "price": 50,
     "available": true,
-    "ticket_url": "/tickets/1st class final.jpg",
+    "ticket_url": "/tickets/1st class final.jpeg",
     "max_quantity": 30
     },
     {
-    "id": 4,
-    "tier": "basic",
-    "description": "Cloturing ceremony basic tickets",
+    "id": 3,
+    "tier": "VIP",
+    "description": "VIP tickets for the finales match",
     "price": 80,
     "available": true,
-    "ticket_url": "/tickets/Basic Ceremony.jpg",
+    "ticket_url": "/tickets/vip finale.jpeg",
     "max_quantity": 30
     }
 ]

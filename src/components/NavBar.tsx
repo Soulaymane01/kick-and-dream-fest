@@ -49,11 +49,13 @@ export default function Navbar() {
           <ul className="flex flex-col py-4 font-medium text-gray-700">
             <li><a href="#home" onClick={() => setIsMenuOpen(false)} className="block py-3 px-6 hover:bg-gray-100 hover:text-primary">Home</a></li>
             <li><a href="#about" onClick={() => setIsMenuOpen(false)} className="block py-3 px-6 hover:bg-gray-100 hover:text-primary">About</a></li>
-            <li><a href="#competition" onClick={() => setIsMenuOpen(false)} className="block py-3 px-6 hover:bg-gray-100 hover:text-primary">Competition</a></li>
+            <li><a href="#shop" onClick={() => setIsMenuOpen(false)} className="block py-3 px-6 hover:bg-gray-100 hover:text-primary">Shop</a></li>
+
+            {/*<li><a href="#competition" onClick={() => setIsMenuOpen(false)} className="block py-3 px-6 hover:bg-gray-100 hover:text-primary">Competition</a></li>
             <li><a href="#schools" onClick={() => setIsMenuOpen(false)} className="block py-3 px-6 hover:bg-gray-100 hover:text-primary">Schools & Registration</a></li>
             <li><a href="#sponsors" onClick={() => setIsMenuOpen(false)} className="block py-3 px-6 hover:bg-gray-100 hover:text-primary">Sponsors & Partner Benefits</a></li>
             <li><a href="#volunteers" onClick={() => setIsMenuOpen(false)} className="block py-3 px-6 hover:bg-gray-100 hover:text-primary">Volunteers</a></li>
-            <li><a href="#contact" onClick={() => setIsMenuOpen(false)} className="block py-3 px-6 hover:bg-gray-100 hover:text-primary">Contact</a></li>
+            <li><a href="#contact" onClick={() => setIsMenuOpen(false)} className="block py-3 px-6 hover:bg-gray-100 hover:text-primary">Contact</a></li>*/}
           </ul>
         </div>
       )}
