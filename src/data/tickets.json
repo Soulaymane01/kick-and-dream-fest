@@ -2,8 +2,8 @@
     
     {
     "id": 1,
-    "tier": "Second class",
-    "description": "Second tier tickets for the finales match",
+    "tier": "Third class",
+    "description": "Thired tier tickets for the finales match",
     "price": 30,
     "available": true,
     "ticket_url": "/tickets/2nd class final.jpeg",
@@ -11,8 +11,8 @@
     },
     {
     "id": 2,
-    "tier": "first class",
-    "description": "First tier tickets for the finales match",
+    "tier": "Second class",
+    "description": "Second tier tickets for the finales match",
     "price": 50,
     "available": true,
     "ticket_url": "/tickets/1st class final.jpeg",
@@ -21,7 +21,7 @@
     {
     "id": 3,
     "tier": "VIP",
-    "description": "VIP tickets for the finales match",
+    "description": "First class tickets for the finales match",
     "price": 80,
     "available": true,
     "ticket_url": "/tickets/vip finale.jpeg",
